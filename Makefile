@@ -14,7 +14,7 @@ hello:	$(OBJ)
 	$(CC) $(CFLAGS) $(DFLAGS) -o $@ $^
 
 clean:
-	$(RM) *~ -v *.o hello listen
+	$(RM) *~ -v *.o hello
 
 release: 
 	tar czf hello_ospf-`cat VERSION`.tar.gz Makefile $(EXTRAS) *.c *.h 
